@@ -1,74 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Web Development Portfolio</title>
+<meta charset="UTF-8">
+<title>Portfolio - Ningxin Fang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== 基础设置 ===== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0000; /* 深黑背景 */
+    color: #eee;
+    font-family: "Georgia", serif;
+    line-height: 1.6;
+}
+
+/* ===== 导航栏 ===== */
+nav {
+    background: rgba(20,0,0,0.9);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ff4444;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px red;
+}
+
+/* ===== 内容区 ===== */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ff0000;
+}
+
+a {
+    color: #ff4444;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* ===== 分割线 ===== */
+hr {
+    border: 0;
+    height: 1px;
+    background: #550000;
+    margin: 30px 0;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Web Development Portfolio</h1>
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#project">Project Link</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<p><strong>Name:</strong> Betty Fang</p>
-<p><strong>Project Title:</strong> Rusty Lake Universe Website</p>
+<div class="container">
 
-<hr>
+    <section id="introduction">
+        <h1>Portfolio Introduction</h1>
+        <p>
+            This portfolio presents my personal web development project inspired by the 
+            mysterious and surreal Rusty Lake game series. The goal was to create an 
+            immersive experience using only HTML and CSS while maintaining a consistent 
+            dark and red-themed visual style.
+        </p>
 
-<h2>Project Overview</h2>
-<p>
-This project is a personal website inspired by the game series 
-Rusty Lake. The website introduces the background story 
-and major titles of the series.
-</p>
+        <p>
+            The website emphasizes typography, layout, and minimalistic animation to convey 
+            the game's psychological and mysterious atmosphere. Through this project, I 
+            explored visual storytelling, interactive design, and website structure.
+        </p>
+    </section>
 
-<h2>Purpose</h2>
-<p>
-The purpose of this project was to practice basic web development 
-skills using HTML and CSS, and to learn how to structure a 
-complete website independently.
-</p>
+    <hr>
 
-<h2>Development Process</h2>
-<p>
-I designed the layout structure first, then built the webpage 
-using HTML. After that, I applied CSS styling to improve readability 
-and layout. The final version was uploaded to GitHub and deployed 
-using GitHub Pages.
-</p>
+    <section id="project">
+        <h2>Project</h2>
+        <p>
+            You can view the live Rusty Lake project website here: 
+            <a href="https://你的用户名.github.io/" target="_blank">Rusty Lake Website</a>.
+        </p>
 
-<h2>Skills Used</h2>
-<ul>
-    <li>HTML structure</li>
-    <li>Basic CSS styling</li>
-    <li>Website layout design</li>
-    <li>GitHub Pages deployment</li>
-</ul>
+        <p>
+            The project features:
+        </p>
+        <ul>
+            <li>Red-on-black dark theme consistent with the Rusty Lake universe</li>
+            <li>Structured sections including Home, Story, and Games</li>
+            <li>Subtle glow and hover effects for text and links</li>
+        </ul>
+    </section>
 
-<h2>Challenges</h2>
-<p>
-One challenge was understanding how to deploy the website correctly 
-using GitHub Pages. I also learned how different sections of a webpage 
-work together to create a complete structure.
-</p>
+    <hr>
 
-<h2>Reflection</h2>
-<p>
-Through this project, I gained confidence in building websites 
-independently. I improved my understanding of webpage structure 
-and learned how to connect design ideas with technical implementation.
-</p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Created by Ningxin Fang. For any questions or feedback, please contact me 
+            via <a href="mailto:your.email@example.com">email</a>.
+        </p>
+    </section>
 
-<hr>
-
-<h2>https://pinkcrocodile-betty.github.io/1/</h2>
-
-<p>
-Live Website: 
-<a href="https://pinkcrocodile-betty.github.io/1/" target="_blank">
-https://pinkcrocodile-betty.github.io/1/
-</a>
-</p>
-
+</div>
 
 </body>
 </html>
