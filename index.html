@@ -1,32 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Betty Fang | Portfolio</title>
+<title>Homepage | Betty Fang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body {
-    font-family: Arial;
-    text-align: center;
-    padding-top: 100px;
-    background: #111;
-    color: white;
+body{
+    margin:0;
+    background: radial-gradient(circle at top, #1a0000, #000);
+    color:#eee;
+    font-family: Georgia, serif;
 }
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: red;
-    color: white;
-    text-decoration: none;
+
+/* ===== 导航栏 ===== */
+nav{
+    background:#000;
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #300;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:#aa0000;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:#ff0000;
+    text-shadow:0 0 8px red;
+}
+
+/* ===== 通用布局 ===== */
+.container{
+    max-width:900px;
+    margin:80px auto;
+    padding:20px;
+}
+
+h1{
+    color:#ff0000;
+    text-align:center;
+    letter-spacing:3px;
+    margin-bottom:40px;
+}
+
+h2{
+    color:#ff4444;
+    border-bottom:1px solid #400;
+    padding-bottom:8px;
+    margin-top:50px;
+}
+
+p{
+    line-height:1.8;
+    opacity:0.9;
+}
+
+ul{
+    line-height:1.8;
+}
+
+/* ===== 项目卡片 ===== */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.card{
+    background:rgba(30,0,0,0.8);
+    padding:20px;
+    border:1px solid #400;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 15px red;
+}
+
+.card img{
+    width:100%;
+    margin-top:15px;
+    border:1px solid #400;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    color:#ff3333;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #300;
+    margin-top:80px;
 }
 </style>
 </head>
+
 <body>
 
-<h1>Ningxin Fang</h1>
-<p>Web Development Portfolio</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="project1.html">Project 1</a>
+    <a href="project2.html">Project 2</a>
+    <a href="project3.html">Project 3</a>
+    <a href="portfolio.html">Portfolio</a>
+</nav>
 
-<a href="portfolio.html">View My Project</a>
+<div class="container">
+
+    <h1>Ningxin Fang</h1>
+
+    <h2>About Me</h2>
+    <p>
+        I am a high school student in New Zealand with a strong passion for 
+        technology, creativity, and self-development. I enjoy sports, programming, 
+        digital art, and game design, and I love turning ideas into interactive projects.
+    </p>
+
+    <p>
+        I am currently building a solid foundation in computer science and mathematics, 
+        preparing for future study in advanced computing fields. My long-term goal is to 
+        pursue a computer science pathway and challenge myself toward top-tier institutions 
+        such as MIT.
+    </p>
+
+    <p>
+        I believe in disciplined learning, project-based practice, and continuous improvement. 
+        Every project I build is part of my journey to grow as a developer and creative thinker.
+    </p>
+
+    <h2>Technical Skills & Learning Focus</h2>
+    <ul>
+        <li>HTML & CSS — Web Design and Frontend Development</li>
+        <li>Python — Programming Fundamentals</li>
+        <li>C++ — Algorithmic Thinking and Problem Solving</li>
+        <li>Digital Illustration & UI Visual Design</li>
+        <li>Creative Coding & Interactive Media</li>
+    </ul>
+
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Project 1 — Atmospheric Game Website</h3>
+            <p>
+                An immersive dark-themed website inspired by a psychological puzzle 
+                game universe. Focused on mood design, visual storytelling, and 
+                atmospheric interface.
+            </p>
+            <a class="button" href="project1.html">View Project →</a>
+            <img src="https://images.igdb.com/igdb/image/upload/t_original/co1r0f.jpg">
+        </div>
+
+        <div class="card">
+            <h3>Project 2 — Coming Soon</h3>
+            <p>
+                A new interactive project currently in planning. This section will 
+                showcase future development work and creative experiments.
+            </p>
+            <a class="button" href="project2.html">View Project →</a>
+            <img src="https://via.placeholder.com/400x250/111111/aa0000?text=Coming+Soon">
+        </div>
+
+        <div class="card">
+            <h3>Project 3 — Coming Soon</h3>
+            <p>
+                Reserved for upcoming technical and creative explorations as my 
+                skills continue to grow.
+            </p>
+            <a class="button" href="project3.html">View Project →</a>
+            <img src="https://via.placeholder.com/400x250/111111/aa0000?text=Coming+Soon">
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Betty Fang — Personal Academic Portfolio</p>
+</footer>
 
 </body>
 </html>
